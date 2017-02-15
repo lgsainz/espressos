@@ -1,0 +1,246 @@
+ /*Espressos style sheet */
+
+html,
+body {
+	height: 100%;
+	font-family: 'Nunito', sans-serif;
+	color: white;
+}
+
+body.home {
+	background: url('img/fall-coffee.jpg') center center no-repeat;
+	background-size: cover; 
+	background-attachment: fixed;
+}
+
+body.about {
+	background: url('img/beans.jpg') no-repeat;
+	background-size: cover; 
+	background-attachment: fixed;
+}
+
+body.menu {
+	background: url('img/work.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body.events {
+	background: url('img/work.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body.contact {
+	background: url('img/work.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container {
+	margin-top: 3%;
+}
+
+.container p {
+	font-size: 16px;
+}
+
+.cover {
+	text-align: center;
+	margin-top: 7%;
+}
+
+.cover h1 {
+	font-size: 80px;
+}
+
+.cover p {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+/* setting size of floating-panel in home screen */
+.cover .container {
+	max-width: 70%;
+}
+
+.navbar {
+	margin-bottom: 0!important;
+  	border: none;
+  	background: rgba(0,0,0,0.4);
+}
+
+.navbar-brand {
+	font-size: 20px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-nav {
+	font-size: 15px;
+}
+
+/*Change active text color here*/
+.navbar-inverse .navbar-nav > li > a {
+	color: white; 
+}
+
+/*Sets the text hover color on navbar*/
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	color: #999999;  
+}
+
+/* CLEAR NAVBAR ON ACTIVE*/
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+	background: rgba(255, 218, 179, 0.4);
+}
+
+#facebook {
+	color: #3366ff;
+}
+
+#yelp {
+	color: #ffff66;
+}
+
+#facebook:hover {
+	color: blue;
+}
+
+#yelp:hover {
+	color: yellow;
+}
+
+/*about and contact box margins*/
+#info {
+	margin-top: 6%;
+}
+
+#info .row {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+#events-info {
+	margin-top: 5%;
+	padding-right: 15%;
+	padding-left: 15%;
+}
+
+#events-img {
+	text-align: center;
+	padding: 2.5%;
+}
+
+/*two small images*/
+img.img-fluid {
+	margin-right: 5%;
+	margin-left: 5%;	
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% ;
+	height: 100% ;
+}
+
+.map-responsive {
+	overflow: hidden;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	position: relative;
+	height: 0;
+}
+
+.map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+#floating-panel {
+	border-radius: 10px;
+	background: rgba(0,0,0,0.5);
+	padding: 3%;
+	padding-top: 1%;
+}
+
+#food-panel {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.menu-descript {
+	font-size: 12px;
+}
+
+#no-bullets li {
+	list-style-type: none;
+}
+
+#title {
+	text-align: center;
+}
+
+#directions-box {
+	margin-top: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -50px;
+	position: relative;
+	overflow: auto;
+}
+
+footer {
+	text-align: center;
+	bottom: 0;
+	width: 40%;
+	position: relative;
+	margin: 0 auto;
+	font-size: 12px;
+	height: 60px;
+	padding-top: 12px;
+	background: rgba(255, 218, 179, 0.5);
+	border-radius: 5px 5px 0 0;
+}
+
+.clear-footer {
+	height: 60px;
+	clear: both;
+}
+
+/* Media queries */
+@media screen and (max-width: 1120px) {
+	footer {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	footer {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cover h1 {
+		font-size: 50px;
+	}
+}
+
